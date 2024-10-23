@@ -1,6 +1,6 @@
 # Kanban Board Application - ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created by Subhadeep Chell - 21BCE1288 (as a part of QuickSell Assignment)
 
 ## Available Scripts
 
