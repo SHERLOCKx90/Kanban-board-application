@@ -1,0 +1,104 @@
+/* Styles for each ticket card */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+  max-width: 100%; /* Ensures card does not overflow its container */
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-title-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%; /* Ensures the title doesn't overflow and leaves room for the avatar */
+}
+
+.card-id {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.ticket-title {
+  font-size: 14px; /* Reduced font size */
+  font-weight: 600; /* Kept it bold */
+  color: #333;
+  margin: 0;
+  word-wrap: break-word; /* Allows the text to break and wrap to the next line */
+  white-space: normal; /* Ensures wrapping */
+}
+
+.card-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar-placeholder {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.priority-icon-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.priority-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+}
+
+.card-tag {
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #555;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+}
+
+.card-tag-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #888; /* Grey dot next to tag */
+  margin-right: 8px;
+}

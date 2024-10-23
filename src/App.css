@@ -1,0 +1,130 @@
+/* General app styles */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .nav {
+    background-color: #fff; /* Keep navbar white */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    z-index: 100; /* Ensures the navbar stays above other content */
+    position: relative;
+  }
+  
+  .board {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+    overflow-x: auto; /* Allows horizontal scrolling for columns */
+    overflow-y: visible; /* Ensure dropdowns are not clipped */
+    white-space: nowrap; /* Prevents wrapping of columns */
+    background-color: #f0f0f0; /* Light gray background for the whole board */
+    flex-grow: 1;
+  }
+  
+  @media (max-width: 768px) {
+    /* Responsive adjustments for tablet or small devices */
+    .board {
+      padding: 10px;
+      gap: 5px;
+    }
+  
+    .column {
+      width: 90vw; /* Make the column full-width on smaller screens */
+      margin: 10px 0; /* Add space between columns vertically */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjustments for mobile devices */
+    .nav {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .column {
+      width: 100vw; /* Columns take full screen width on mobile */
+      margin: 5px 0; /* Reduce the margin between columns */
+    }
+  }
+  
+  /* Column styles */
+  .column {
+    background-color: transparent; /* Set column background to transparent */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px; /* Default column width */
+  }
+  
+  .column-header {
+    display: flex;
+    justify-content: space-between; /* Align title and icons */
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .column h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+  }
+  
+  .column h3 img.status-icon {
+    margin-right: 10px;
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+  }
+  
+  .column-actions {
+    display: flex;
+    gap: 10px; /* Spacing between icons */
+  }
+  
+  .action-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: white; /* Keep the cards white */
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust card padding for smaller screens */
+    .card {
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjustments for cards on mobile */
+    .card {
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+  }
+  
